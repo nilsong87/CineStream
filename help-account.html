@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Ajuda com Conta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">CineStream</a></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar filmes, séries...">
+                <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu" id="userMenu">
+                <i class="fas fa-user-circle"></i>
+                <span class="username">Usuário</span>
+                <div class="dropdown-menu">
+                    <a href="profile.html"><i class="fas fa-user"></i> Meu Perfil</a>
+                    <a href="plans.html"><i class="fas fa-crown"></i> Planos</a>
+                    <a href="help.html"><i class="fas fa-question-circle"></i> Ajuda</a>
+                    <div class="divider"></div>
+                    <a href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="help-container">
+        <h1>Ajuda com Conta</h1>
+        
+        <div class="help-search">
+            <input type="text" placeholder="Buscar na seção de conta...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="legal-section" id="criar-conta">
+            <h2><i class="fas fa-user-plus"></i> Como criar uma conta</h2>
+            <p>Para criar uma conta no CineStream:</p>
+            <ol>
+                <li>Acesse a página de <a href="register.html">cadastro</a></li>
+                <li>Preencha seu nome, e-mail e crie uma senha segura</li>
+                <li>Selecione o plano de assinatura desejado</li>
+                <li>Informe os dados de pagamento</li>
+                <li>Clique em "Criar Conta"</li>
+            </ol>
+            <p>Você receberá um e-mail de confirmação. Basta clicar no link para ativar sua conta.</p>
+        </div>
+        
+        <div class="legal-section" id="alterar-senha">
+            <h2><i class="fas fa-key"></i> Alterar senha</h2>
+            <p>Para alterar sua senha:</p>
+            <ol>
+                <li>Faça login em sua conta</li>
+                <li>Acesse <a href="profile.html">Meu Perfil</a></li>
+                <li>Clique em "Segurança"</li>
+                <li>Selecione "Alterar Senha"</li>
+                <li>Digite sua senha atual e a nova senha</li>
+                <li>Confirme a nova senha e clique em "Salvar"</li>
+            </ol>
+            <p>Se esqueceu sua senha, você pode <a href="forgot-password.html">redefini-la aqui</a>.</p>
+        </div>
+        
+        <div class="legal-section" id="cancelar-conta">
+            <h2><i class="fas fa-user-times"></i> Cancelar conta</h2>
+            <p>Para cancelar sua conta no CineStream:</p>
+            <ol>
+                <li>Faça login em sua conta</li>
+                <li>Acesse <a href="profile.html">Meu Perfil</a></li>
+                <li>Clique em "Configurações da Conta"</li>
+                <li>Selecione "Cancelar Assinatura"</li>
+                <li>Siga as instruções na tela para confirmar o cancelamento</li>
+            </ol>
+            <p><strong>Atenção:</strong> O cancelamento é imediato e você perderá acesso ao conteúdo. Se tiver um período pago restante, não haverá reembolso.</p>
+        </div>
+        
+        <div class="help-contact">
+            <h2>Ainda precisa de ajuda?</h2>
+            <p>Entre em contato com nossa equipe de suporte:</p>
+            <div class="contact-options">
+                <a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="tel:+551140028922" class="contact-btn"><i class="fas fa-phone"></i> Telefone</a>
+                <a href="contact.html#chat" class="contact-btn"><i class="fas fa-comment"></i> Chat Online</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><a href="index.html">CineStream</a></div>
+            <div class="footer-links">
+                <a href="terms.html">Termos de Uso</a>
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="help.html">Ajuda</a>
+                <a href="contact.html">Contato</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com/cinestream" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/cinestream" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/cinestream" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 CineStream. Todos os direitos reservados Nilson Gomes.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('click', function(event) {
+            const userMenu = document.getElementById('userMenu');
+            if (!userMenu.contains(event.target)) {
+                const dropdown = document.querySelector('.dropdown-menu');
+                dropdown.style.display = 'none';
+            }
+        });
+
+        document.getElementById('userMenu').addEventListener('click', function() {
+            const dropdown = document.querySelector('.dropdown-menu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

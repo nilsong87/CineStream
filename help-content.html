@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Ajuda com Conteúdo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">CineStream</a></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar filmes, séries...">
+                <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu" id="userMenu">
+                <i class="fas fa-user-circle"></i>
+                <span class="username">Usuário</span>
+                <div class="dropdown-menu">
+                    <a href="profile.html"><i class="fas fa-user"></i> Meu Perfil</a>
+                    <a href="plans.html"><i class="fas fa-crown"></i> Planos</a>
+                    <a href="help.html"><i class="fas fa-question-circle"></i> Ajuda</a>
+                    <div class="divider"></div>
+                    <a href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="help-container">
+        <h1>Ajuda com Conteúdo</h1>
+        
+        <div class="help-search">
+            <input type="text" placeholder="Buscar na seção de conteúdo...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="legal-section" id="minha-lista">
+            <h2><i class="fas fa-list"></i> Como adicionar à minha lista</h2>
+            <p>Para adicionar conteúdo à sua lista de favoritos:</p>
+            <ol>
+                <li>Navegue até o filme ou série que deseja adicionar</li>
+                <li>Clique no ícone <i class="fas fa-plus"></i> ou "Adicionar à Minha Lista"</li>
+                <li>O conteúdo será salvo na seção "Minha Lista" do seu perfil</li>
+            </ol>
+            <p>Você pode organizar sua lista criando categorias personalizadas na página do seu perfil.</p>
+        </div>
+        
+        <div class="legal-section" id="problemas-reproducao">
+            <h2><i class="fas fa-video"></i> Problemas para reproduzir</h2>
+            <p>Se estiver enfrentando problemas para reproduzir conteúdo:</p>
+            <ol>
+                <li><strong>Verifique sua conexão com a internet</strong> - Recomendamos pelo menos 5Mbps para HD</li>
+                <li><strong>Atualize seu navegador</strong> - Use a versão mais recente do Chrome, Firefox, Safari ou Edge</li>
+                <li><strong>Limpe o cache do navegador</strong> - Isso pode resolver problemas de carregamento</li>
+                <li><strong>Reinicie o dispositivo</strong> - Às vezes isso resolve problemas temporários</li>
+                <li><strong>Tente outro dispositivo</strong> - Para isolar se o problema é no dispositivo específico</li>
+            </ol>
+            <p>Se o problema persistir, entre em contato com nosso <a href="contact.html">suporte técnico</a>.</p>
+        </div>
+        
+        <div class="legal-section" id="qualidade-video">
+            <h2><i class="fas fa-tv"></i> Qualidade do vídeo</h2>
+            <p>Para ajustar a qualidade do vídeo:</p>
+            <ol>
+                <li>Inicie a reprodução de um filme ou série</li>
+                <li>Clique no ícone de engrenagem <i class="fas fa-cog"></i> no player</li>
+                <li>Selecione "Qualidade"</li>
+                <li>Escolha entre:
+                    <ul>
+                        <li>Auto (recomendado)</li>
+                        <li>Alta (1080p ou 4K, se disponível)</li>
+                        <li>Média (720p)</li>
+                        <li>Baixa (480p)</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>A qualidade automática ajusta-se conforme sua conexão para evitar buffering. A disponibilidade de resoluções depende do seu plano e do dispositivo.</p>
+        </div>
+        
+        <div class="help-contact">
+            <h2>Ainda precisa de ajuda?</h2>
+            <p>Entre em contato com nossa equipe de suporte:</p>
+            <div class="contact-options">
+                <a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="tel:+551140028922" class="contact-btn"><i class="fas fa-phone"></i> Telefone</a>
+                <a href="contact.html#chat" class="contact-btn"><i class="fas fa-comment"></i> Chat Online</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><a href="index.html">CineStream</a></div>
+            <div class="footer-links">
+                <a href="terms.html">Termos de Uso</a>
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="help.html">Ajuda</a>
+                <a href="contact.html">Contato</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com/cinestream" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/cinestream" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/cinestream" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 CineStream. Todos os direitos reservados Nilson Gomes.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('click', function(event) {
+            const userMenu = document.getElementById('userMenu');
+            if (!userMenu.contains(event.target)) {
+                const dropdown = document.querySelector('.dropdown-menu');
+                dropdown.style.display = 'none';
+            }
+        });
+
+        document.getElementById('userMenu').addEventListener('click', function() {
+            const dropdown = document.querySelector('.dropdown-menu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

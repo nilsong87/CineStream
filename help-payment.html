@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Ajuda com Pagamentos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">CineStream</a></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar filmes, séries...">
+                <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu" id="userMenu">
+                <i class="fas fa-user-circle"></i>
+                <span class="username">Usuário</span>
+                <div class="dropdown-menu">
+                    <a href="profile.html"><i class="fas fa-user"></i> Meu Perfil</a>
+                    <a href="plans.html"><i class="fas fa-crown"></i> Planos</a>
+                    <a href="help.html"><i class="fas fa-question-circle"></i> Ajuda</a>
+                    <div class="divider"></div>
+                    <a href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="help-container">
+        <h1>Ajuda com Pagamentos</h1>
+        
+        <div class="help-search">
+            <input type="text" placeholder="Buscar na seção de pagamentos...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="legal-section">
+            <h2><i class="fas fa-credit-card"></i> Métodos de Pagamento Aceitos</h2>
+            <p>O CineStream aceita os seguintes métodos de pagamento:</p>
+            <ul>
+                <li>Cartões de crédito: Visa, Mastercard, American Express, Elo</li>
+                <li>Cartões de débito (somente para planos mensais)</li>
+                <li>PayPal</li>
+                <li>Pix (pagamento instantâneo)</li>
+                <li>Boleto bancário (com prazo de 3 dias úteis para compensação)</li>
+                <li>Google Pay e Apple Pay</li>
+            </ul>
+            <p>Para adicionar ou alterar seu método de pagamento, acesse <a href="profile.html#payment">Meu Perfil > Pagamento</a>.</p>
+        </div>
+        
+        <div class="legal-section" id="problemas-cobranca">
+            <h2><i class="fas fa-exclamation-triangle"></i> Problemas com cobrança</h2>
+            <p>Se você identificou uma cobrança indevida ou está com problemas para efetuar pagamento:</p>
+            <ol>
+                <li>Verifique se os dados do cartão estão corretos e atualizados</li>
+                <li>Confirme se há saldo ou limite disponível no cartão</li>
+                <li>Verifique com seu banco se há bloqueios de segurança</li>
+                <li>Para cobranças duplicadas ou indevidas, entre em contato com nosso <a href="contact.html">suporte</a></li>
+            </ol>
+            <p>Nós nunca pedimos dados de cartão por e-mail ou telefone. Desconfie de mensagens solicitando essas informações.</p>
+        </div>
+        
+        <div class="legal-section" id="reembolsos">
+            <h2><i class="fas fa-money-bill-wave"></i> Política de Reembolsos</h2>
+            <p>Nossa política de reembolso:</p>
+            <ul>
+                <li><strong>Planos mensais:</strong> Cancelamentos não geram reembolso do período já pago</li>
+                <strong>Planos anuais:</strong> Reembolso proporcional para cancelamentos nos primeiros 30 dias</li>
+                <li><strong>Conteúdo pago individual:</strong> Reembolsos em até 14 dias se não assistido</li>
+                <li><strong>Erros de cobrança:</strong> Reembolsos totais quando comprovado nosso erro</li>
+            </ul>
+            <p>Para solicitar reembolso, acesse <a href="contact.html#refund">nossa página de contato</a> e selecione "Solicitar Reembolso".</p>
+        </div>
+        
+        <div class="help-contact">
+            <h2>Ainda precisa de ajuda?</h2>
+            <p>Entre em contato com nossa equipe de suporte:</p>
+            <div class="contact-options">
+                <a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="tel:+551140028922" class="contact-btn"><i class="fas fa-phone"></i> Telefone</a>
+                <a href="contact.html#chat" class="contact-btn"><i class="fas fa-comment"></i> Chat Online</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><a href="index.html">CineStream</a></div>
+            <div class="footer-links">
+                <a href="terms.html">Termos de Uso</a>
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="help.html">Ajuda</a>
+                <a href="contact.html">Contato</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com/cinestream" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/cinestream" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/cinestream" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 CineStream. Todos os direitos reservados Nilson Gomes.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('click', function(event) {
+            const userMenu = document.getElementById('userMenu');
+            if (!userMenu.contains(event.target)) {
+                const dropdown = document.querySelector('.dropdown-menu');
+                dropdown.style.display = 'none';
+            }
+        });
+
+        document.getElementById('userMenu').addEventListener('click', function() {
+            const dropdown = document.querySelector('.dropdown-menu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
