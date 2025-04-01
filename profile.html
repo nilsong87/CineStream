@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Meu Perfil</title>
+    
+    <!-- Links para folhas de estilo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS específico para perfil -->
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CineStream</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar filmes, séries...">
+                <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu">
+                <i class="fas fa-user-circle"></i>
+                <span class="username">Usuário</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="images/avatar.jpg" alt="Avatar do usuário" id="user-avatar">
+                <button class="edit-btn" id="change-avatar">Editar</button>
+                <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+            </div>
+            <div class="profile-info">
+                <h1>Meu Perfil</h1>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Filmes assistidos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Na minha lista</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Favoritos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="profile-section">
+            <h2>Minha Lista</h2>
+            <div class="movies-grid" id="my-list">
+                <!-- Filmes serão adicionados via JavaScript -->
+                <div class="empty-state">
+                    <i class="fas fa-bookmark"></i>
+                    <p>Sua lista está vazia</p>
+                    <a href="catalogo.html" class="browse-btn">Explorar catálogo</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Assistidos Recentemente</h2>
+            <div class="movies-grid" id="recently-watched">
+                <!-- Filmes serão adicionados via JavaScript -->
+                <div class="empty-state">
+                    <i class="fas fa-history"></i>
+                    <p>Nenhum conteúdo assistido recentemente</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section account-settings">
+            <h2>Configurações da Conta</h2>
+            <form class="settings-form" id="account-settings-form">
+                <div class="form-group">
+                    <label for="profile-name">Nome</label>
+                    <input type="text" id="profile-name" value="Usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="profile-email">E-mail</label>
+                    <input type="email" id="profile-email" value="usuario@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="profile-password">Alterar senha</label>
+                    <input type="password" id="profile-password" placeholder="Nova senha">
+                    <small>Deixe em branco para manter a senha atual</small>
+                </div>
+                <div class="form-group">
+                    <label for="profile-language">Idioma preferido</label>
+                    <select id="profile-language">
+                        <option value="pt-BR" selected>Português (Brasil)</option>
+                        <option value="en-US">Inglês (EUA)</option>
+                        <option value="es-ES">Espanhol</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="save-btn">Salvar alterações</button>
+                    <button type="button" class="logout-btn" id="logout-btn">Sair</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">CineStream</div>
+            <div class="footer-links">
+                <a href="terms.html">Termos de Uso</a>
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="help.html">Ajuda</a>
+                <a href="contact.html">Contato</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com/cinestream" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/cinestream" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/cinestream" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/cinestream" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 CineStream. Todos os direitos reservados Nilson Gomes.<br>
+                CNPJ: 12.345.678/0001-99
+            </div>
+        </div>
+    </footer>
+
+    <!-- Links para scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/profile.js"></script>
+    
+    <!-- Script para ícones (opcional) -->
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</body>
+</html>

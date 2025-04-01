@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Sua plataforma de streaming premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">CineStream</a></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar filmes, séries...">
+                <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu" id="userMenu">
+                <i class="fas fa-user-circle"></i>
+                <span class="username">Usuário</span>
+                <div class="dropdown-menu">
+                    <a href="profile.html"><i class="fas fa-user"></i> Meu Perfil</a>
+                    <a href="plans.html"><i class="fas fa-crown"></i> Planos</a>
+                    <a href="help.html"><i class="fas fa-question-circle"></i> Ajuda</a>
+                    <div class="divider"></div>
+                    <a href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>INTERESTELAR</h1>
+                <div class="movie-meta">
+                    <span class="rating"><i class="fas fa-star"></i> 4.8/5</span>
+                    <span class="year">2014</span>
+                    <span class="duration">2h 49m</span>
+                    <span class="hd">HD</span>
+                </div>
+                <p class="description">Um grupo de astronautas viaja através de um buraco de minhoca em busca de um novo lar para a humanidade.</p>
+                <div class="hero-buttons">
+                    <button class="play-btn" id="featured-play-btn">
+                        <i class="fas fa-play"></i> Assistir agora
+                    </button>
+                    <button class="info-btn">
+                        <i class="fas fa-info-circle"></i> Mais informações
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-container">
+            <!-- Categorias serão preenchidas via JavaScript -->
+        </section>
+
+        <div class="modal" id="movieModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div class="modal-body">
+                    <div class="modal-poster"></div>
+                    <div class="modal-info">
+                        <h2 id="modal-title"></h2>
+                        <div class="movie-meta">
+                            <span id="modal-year"></span>
+                            <span id="modal-runtime"></span>
+                            <span id="modal-rating"></span>
+                            <span class="hd">HD</span>
+                        </div>
+                        <p id="modal-description"></p>
+                        <div class="modal-actions">
+                            <button class="play-btn" id="modal-play-btn">
+                                <i class="fas fa-play"></i> Assistir
+                            </button>
+                            <button class="add-btn">
+                                <i class="fas fa-plus"></i> Minha Lista
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">CineStream</div>
+            <div class="footer-links">
+                <a href="terms.html">Termos de Uso</a>
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="help.html">Ajuda</a>
+                <a href="contact.html">Contato</a>
+            </div>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 CineStream. Todos os direitos reservados Nilson Gomes.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>

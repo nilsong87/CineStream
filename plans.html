@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Planos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CineStream</div>
+            <div class="user-menu">
+                <i class="fas fa-user-circle"></i>
+                <span class="username">Usuário</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="plans-container">
+        <h1>Escolha seu Plano</h1>
+        <p class="subtitle">Assista a milhares de filmes e séries sem limites</p>
+        
+        <div class="plans-toggle">
+            <span>Mensal</span>
+            <label class="switch">
+                <input type="checkbox" id="plan-toggle">
+                <span class="slider round"></span>
+            </label>
+            <span>Anual <span class="discount-badge">-20%</span></span>
+        </div>
+        
+        <div class="plans-grid">
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h2>Básico</h2>
+                    <div class="plan-price">
+                        <span class="price">R$ 19,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> Qualidade SD (480p)</li>
+                    <li><i class="fas fa-check"></i> 1 tela simultânea</li>
+                    <li><i class="fas fa-check"></i> Catálogo completo</li>
+                    <li><i class="fas fa-check"></i> Assistir em 1 dispositivo</li>
+                    <li><i class="fas fa-times"></i> Downloads</li>
+                </ul>
+                <button class="plan-btn">Assinar</button>
+            </div>
+            
+            <div class="plan-card recommended">
+                <div class="recommended-badge">Recomendado</div>
+                <div class="plan-header">
+                    <h2>Padrão</h2>
+                    <div class="plan-price">
+                        <span class="price">R$ 29,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> Qualidade HD (1080p)</li>
+                    <li><i class="fas fa-check"></i> 2 telas simultâneas</li>
+                    <li><i class="fas fa-check"></i> Catálogo completo</li>
+                    <li><i class="fas fa-check"></i> Assistir em 2 dispositivos</li>
+                    <li><i class="fas fa-check"></i> Downloads em 1 dispositivo</li>
+                </ul>
+                <button class="plan-btn">Assinar</button>
+            </div>
+            
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h2>Premium</h2>
+                    <div class="plan-price">
+                        <span class="price">R$ 39,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> Qualidade 4K Ultra HD</li>
+                    <li><i class="fas fa-check"></i> 4 telas simultâneas</li>
+                    <li><i class="fas fa-check"></i> Catálogo completo</li>
+                    <li><i class="fas fa-check"></i> Assistir em 4 dispositivos</li>
+                    <li><i class="fas fa-check"></i> Downloads em 4 dispositivos</li>
+                </ul>
+                <button class="plan-btn">Assinar</button>
+            </div>
+        </div>
+        
+        <div class="plans-benefits">
+            <h2>Benefícios de todos os planos</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-film"></i>
+                    <h3>Catálogo Completo</h3>
+                    <p>Acesso ilimitado a todos os filmes e séries</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Assista em Qualquer Lugar</h3>
+                    <p>Disponível em TV, computador, celular e tablet</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-plus-circle"></i>
+                    <h3>Novos Conteúdos</h3>
+                    <p>Adicionamos novos títulos toda semana</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-child"></i>
+                    <h3>Perfis Personalizados</h3>
+                    <p>Até 5 perfis diferentes por conta</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="plans-faq">
+            <h2>Perguntas Frequentes</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question">Posso mudar de plano a qualquer momento? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Sim, você pode alterar seu plano a qualquer momento. A mudança será aplicada no próximo ciclo de cobrança.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Há compromisso ou fidelidade? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Não, você pode cancelar sua assinatura a qualquer momento sem multa ou taxa adicional.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Como funciona o plano anual? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>O plano anual oferece 20% de desconto em relação ao plano mensal. Você paga uma única vez por 12 meses de serviço.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Posso assistir em mais de um dispositivo? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Sim, a quantidade de dispositivos simultâneos depende do seu plano. Básico: 1, Padrão: 2, Premium: 4 dispositivos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">CineStream</div>
+            <div class="footer-links">
+                <a href="terms.html">Termos de Uso</a>
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="help.html">Ajuda</a>
+                <a href="contact.html">Contato</a>
+            </div>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 CineStream. Todos os direitos reservados Nilson Gomes.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

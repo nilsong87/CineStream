@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Confirmação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">CineStream</a></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar filmes, séries...">
+                <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu" id="userMenu">
+                <i class="fas fa-user-circle"></i>
+                <span class="username">Usuário</span>
+                <div class="dropdown-menu">
+                    <a href="profile.html"><i class="fas fa-user"></i> Meu Perfil</a>
+                    <a href="plans.html"><i class="fas fa-crown"></i> Planos</a>
+                    <a href="help.html"><i class="fas fa-question-circle"></i> Ajuda</a>
+                    <div class="divider"></div>
+                    <a href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="confirmation-container">
+        <div class="confirmation-card">
+            <div class="confirmation-header">
+                <div class="confirmation-icon success">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h1>Assinatura Confirmada!</h1>
+                <p>Obrigado por assinar o CineStream</p>
+            </div>
+            
+            <div class="confirmation-details">
+                <div class="detail-item">
+                    <span class="detail-label">Número do Pedido</span>
+                    <span class="detail-value">CS123456789</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Data da Assinatura</span>
+                    <span class="detail-value">02/04/2025</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Plano</span>
+                    <span class="detail-value">Padrão (Mensal)</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Valor</span>
+                    <span class="detail-value">R$ 29,90/mês</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Próximo pagamento</span>
+                    <span class="detail-value">02/05/2025</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Método de Pagamento</span>
+                    <span class="detail-value">Cartão Visa **** 3456</span>
+                </div>
+            </div>
+            
+            <div class="confirmation-actions">
+                <a href="index.html" class="action-btn primary">
+                    <i class="fas fa-play"></i> Começar a Assistir
+                </a>
+                <a href="profile.html" class="action-btn secondary">
+                    <i class="fas fa-user-cog"></i> Configurar Perfil
+                </a>
+            </div>
+            
+            <div class="confirmation-message">
+                <p>Enviamos um e-mail para <strong>usuario@email.com</strong> com os detalhes da sua assinatura.</p>
+                <p>Caso tenha alguma dúvida, visite nossa <a href="help.html">Central de Ajuda</a> ou entre em <a href="contact.html">contato</a> conosco.</p>
+            </div>
+        </div>
+        
+        <div class="confirmation-recommendations">
+            <h2>Recomendado para você</h2>
+            <div class="movies-grid">
+                <div class="movie-card">
+                    <a href="movie-interstellar.html">
+                        <img src="https://image.tmdb.org/t/p/w500/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg" alt="Interestelar" class="movie-thumbnail">
+                        <div class="movie-overlay">
+                            <h3 class="movie-title">Interestelar</h3>
+                            <div class="movie-details">2014 • 2h 49m • 4.8/5</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="movie-inception.html">
+                        <img src="https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg" alt="A Origem" class="movie-thumbnail">
+                        <div class="movie-overlay">
+                            <h3 class="movie-title">A Origem</h3>
+                            <div class="movie-details">2010 • 2h 28m • 4.8/5</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="movie-dune.html">
+                        <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg" alt="Duna" class="movie-thumbnail">
+                        <div class="movie-overlay">
+                            <h3 class="movie-title">Duna</h3>
+                            <div class="movie-details">2021 • 2h 35m • 4.3/5</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="movie-darkknight.html">
+                        <img src="https://image.tmdb.org/t/p/w500/iGZX91hIqM9Uu0KGhd4MUaJ0Rtm.jpg" alt="Batman: O Cavaleiro das Trevas" class="movie-thumbnail">
+                        <div class="movie-overlay">
+                            <h3 class="movie-title">Batman: O Cavaleiro das Trevas</h3>
+                            <div class="movie-details">2008 • 2h 32m • 4.8/5</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><a href="index.html">CineStream</a></div>
+            <div class="footer-links">
+                <a href="terms.html">Termos de Uso</a>
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="help.html">Ajuda</a>
+                <a href="contact.html">Contato</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com/cinestream" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/cinestream" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/cinestream" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 CineStream. Todos os direitos reservados Nilson Gomes.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

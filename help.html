@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Ajuda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">CineStream</a></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar filmes, séries...">
+                <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu" id="userMenu">
+                <i class="fas fa-user-circle"></i>
+                <span class="username">Usuário</span>
+                <div class="dropdown-menu">
+                    <a href="profile.html"><i class="fas fa-user"></i> Meu Perfil</a>
+                    <a href="plans.html"><i class="fas fa-crown"></i> Planos</a>
+                    <a href="help.html"><i class="fas fa-question-circle"></i> Ajuda</a>
+                    <div class="divider"></div>
+                    <a href="login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="help-container">
+        <h1>Central de Ajuda</h1>
+        
+        <div class="help-search">
+            <input type="text" placeholder="Como podemos ajudar?">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="help-categories">
+            <div class="help-category">
+                <h2><i class="fas fa-user-circle"></i> Conta</h2>
+                <ul>
+                    <li><a href="help-account.html#criar-conta">Como criar uma conta</a></li>
+                    <li><a href="help-account.html#alterar-senha">Alterar senha</a></li>
+                    <li><a href="plans.html">Gerenciar assinatura</a></li>
+                    <li><a href="help-account.html#cancelar-conta">Cancelar conta</a></li>
+                </ul>
+            </div>
+            
+            <div class="help-category">
+                <h2><i class="fas fa-film"></i> Conteúdo</h2>
+                <ul>
+                    <li><a href="help-content.html#minha-lista">Como adicionar à minha lista</a></li>
+                    <li><a href="help-content.html#problemas-reproducao">Problemas para reproduzir</a></li>
+                    <li><a href="help-content.html#qualidade-video">Qualidade do vídeo</a></li>
+                    <li><a href="index.html">Conteúdos disponíveis</a></li>
+                </ul>
+            </div>
+            
+            <div class="help-category">
+                <h2><i class="fas fa-credit-card"></i> Pagamento</h2>
+                <ul>
+                    <li><a href="payment.html">Métodos de pagamento</a></li>
+                    <li><a href="help-payment.html#problemas-cobranca">Problemas com cobrança</a></li>
+                    <li><a href="help-payment.html#reembolsos">Reembolsos</a></li>
+                    <li><a href="plans.html">Promoções</a></li>
+                </ul>
+            </div>
+            
+            <div class="help-category">
+                <h2><i class="fas fa-mobile-alt"></i> Dispositivos</h2>
+                <ul>
+                    <li><a href="help-devices.html#configurar-tv">Configurar TV</a></li>
+                    <li><a href="help-devices.html#app-celular">Aplicativo para celular</a></li>
+                    <li><a href="help-devices.html#compatibilidade">Compatibilidade</a></li>
+                    <li><a href="help-devices.html#problemas-conexao">Problemas de conexão</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="help-faq">
+            <h2>Perguntas Frequentes</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question">Como faço para alterar meu plano de assinatura? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Para alterar seu plano, acesse sua conta no site do CineStream, vá em <a href="plans.html">"Planos"</a> e selecione "Alterar Plano". Escolha o novo plano e confirme a alteração. As mudanças terão efeito no próximo ciclo de cobrança.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Por que um filme que estava disponível sumiu? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Os direitos de streaming dos conteúdos são adquiridos por períodos determinados. Quando esses direitos expiram, o conteúdo pode ser removido do catálogo. Estamos sempre trabalhando para renovar os direitos ou adicionar novos títulos.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Como faço para baixar filmes para assistir offline? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>No <a href="help-devices.html#app-celular">aplicativo móvel</a> do CineStream, procure o filme ou série que deseja baixar. Na página do conteúdo, toque no ícone de download. O conteúdo ficará disponível na seção "Downloads" do aplicativo.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Por que o vídeo está travando ou em baixa qualidade? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Isso pode ocorrer devido à velocidade da sua conexão com a internet. Verifique sua conexão e tente os seguintes passos: reinicie o roteador, feche outros aplicativos que usam internet ou ajuste a qualidade do vídeo nas <a href="help-content.html#qualidade-video">configurações do player</a>.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="help-contact">
+            <h2>Ainda precisa de ajuda?</h2>
+            <p>Entre em contato com nossa equipe de suporte:</p>
+            <div class="contact-options">
+                <a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="tel:+551140028922" class="contact-btn"><i class="fas fa-phone"></i> Telefone</a>
+                <a href="contact.html#chat" class="contact-btn"><i class="fas fa-comment"></i> Chat Online</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><a href="index.html">CineStream</a></div>
+            <div class="footer-links">
+                <a href="terms.html">Termos de Uso</a>
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="help.html">Ajuda</a>
+                <a href="contact.html">Contato</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com/cinestream" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/cinestream" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/cinestream" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 CineStream. Todos os direitos reservados Nilson Gomes.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Função para o dropdown do usuário
+        document.addEventListener('click', function(event) {
+            const userMenu = document.getElementById('userMenu');
+            if (!userMenu.contains(event.target)) {
+                const dropdown = document.querySelector('.dropdown-menu');
+                dropdown.style.display = 'none';
+            }
+        });
+
+        document.getElementById('userMenu').addEventListener('click', function() {
+            const dropdown = document.querySelector('.dropdown-menu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Função para o FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+                
+                // Fecha todas as respostas
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.display = 'none';
+                });
+                
+                // Abre a resposta clicada se não estava aberta
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
