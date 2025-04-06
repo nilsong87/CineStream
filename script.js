@@ -53,7 +53,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 description: "Batman trava uma batalha contra o Coringa em Gotham City, enquanto luta com questões de ordem e justiça.",
                 youtubeId: "EXeTwQWrcwY",
                 thumbnail: "https://image.tmdb.org/t/p/w500/iGZX91hIqM9Uu0KGhd4MUaJ0Rtm.jpg"
-            }
+            },
+            {
+                title: "Rambo: Programado para Matar",
+                year: 1982,
+                duration: "1h 37m",
+                rating: "4.2/5",
+                description: "John Rambo, um veterano do Vietnã, é perseguido por um xerife de uma pequena cidade, levando a uma violenta onda de destruição.",
+                youtubeId: "IAqLKlxY3Eo",
+                thumbnail: "https://image.tmdb.org/t/p/w500/bGIDYYOX7Cj1o7W8JiwHd3TzJVw.jpg"
+            },            
         ]
     },
     {
